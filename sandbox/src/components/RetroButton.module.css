@@ -1,0 +1,10 @@
+.RetroButton {
+  padding: 5px;
+  background-color: #a7a087;
+  border: 5px outset hsl(45, 15%, 70%);
+  transition: all 0.3s;
+}
+
+.RetroButton:active {
+  border-style: inset;
+}

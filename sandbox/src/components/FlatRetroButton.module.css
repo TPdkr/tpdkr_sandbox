@@ -1,0 +1,16 @@
+.RetroButton {
+  margin: 20px;
+  padding: 10px;
+  background-color: #a7a087;
+  border: 2px solid hsl(45, 15%, 10%);
+  box-shadow: 5px 5px 1px 1px hsl(45, 15%, 10%);
+  transition: all 0.3s;
+}
+
+.RetroButton:hover {
+  box-shadow: 3px 3px 1px 1px hsl(45, 15%, 10%);
+}
+
+.RetroButton:active {
+  box-shadow: 0px 0px 0px 0px hsl(45, 15%, 10%);
+}

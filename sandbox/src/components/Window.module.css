@@ -1,0 +1,12 @@
+.Window {
+  border: 5px solid black;
+  background-color: white;
+  max-width: 64rem;
+  justify-self: center;
+  box-shadow: 10px 10px 0px 1px black;
+}
+
+.WindowBar {
+  background-color: rgb(163, 163, 163);
+  min-height: 2rem;
+}
