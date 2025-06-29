@@ -1,0 +1,92 @@
+:root {
+  /**website colors*/
+  --source: #742cff;
+  --surface: #141218;
+  --onSurface: #e6e0e9;
+  --surfaceDim: #3b383e;
+  --primaryContainer: #4d3d75;
+  --onPrimaryContainer: #e9ddff;
+  --primary: #cfbdfe;
+  --onPrimary: #36275d;
+  /*#B7EEE2*/
+  --tertiaryContainer: #334b46;
+  --onTertiaryContainer: #cde8e1;
+  --tertiary: #b1ccc5;
+  --onTertiary: #1c3530;
+  /*DEFAULT*/
+  /*
+  --tertiaryContainer: #633b48;
+  --onTertiaryContainer: #ffd9e3;
+  --tertiary:#efb8c8;
+  --onTertiary: #4a2532;
+  */
+  /*#B7C4EE*/
+  /*
+  --tertiaryContainer: #304578;
+  --onTertiaryContainer: #dae2ff;
+  --tertiary:#b2c5ff;
+  --onTertiary: #182e60;
+  */
+  --tertiaryContainerInv: #ffd9e3;
+  --onTertiaryContainerInv: #633b48;
+  --secondary: #cbc2db;
+  --onSecondary: #332d41;
+  --invSurvace: #2c2a31;
+
+  --active: #92d892;
+
+  /*website padding values**/
+  --tiny-pad: 5px;
+  --small-pad: 10px;
+  --medium-pad: 20px;
+  --large-pad: 30px;
+  --giant-pad: 150px;
+
+  /*radius sizes*/
+  --medium-radius: 20px;
+  --large-radius: 30px;
+
+  /*shadow*/
+  --shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+  --shadowColor: rgba(0, 0, 0, 0.6);
+}
+
+/*set the default state*/
+* {
+  /*font-family: Helvetica;*/
+  font-family: "IBM Plex Mono", monospace;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+} /*ground color*/
+
+body {
+  margin-top: 6rem;
+  color: var(--onSurface);
+  background-color: var(--surface);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4,
+button {
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
