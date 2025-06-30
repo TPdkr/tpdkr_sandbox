@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <h1>This is an app</h1>
+      <p>This is paragraph text</p>
     </div>
   );
 }

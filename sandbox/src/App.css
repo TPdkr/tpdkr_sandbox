@@ -1,9 +1,9 @@
 :root {
   /**website colors*/
   --source: #742cff;
-  --surface: #141218;
-  --onSurface: #e6e0e9;
-  --surfaceDim: #3b383e;
+  --surface: #d4d4d4;
+  --onSurface: #000000;
+  --surfaceDim: #bdbdbd;
   --primaryContainer: #4d3d75;
   --onPrimaryContainer: #e9ddff;
   --primary: #cfbdfe;

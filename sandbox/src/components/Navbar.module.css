@@ -11,7 +11,8 @@ NAVIGATION BAR
   left: 0;
   z-index: 100;
   background-color: var(--surface);
-  border-bottom: 1px solid var(--onSurface);
+  border-bottom: 4px solid var(--onSurface);
+  overflow: hidden;
 }
 
 .Navbar ul {
@@ -28,19 +29,29 @@ NAVIGATION BAR
 }
 
 .Navbar a {
+  z-index: 10;
   display: flex;
   text-decoration: none;
   padding: 1em 2em;
   color: var(--onSurface);
-  transition: background-color 150ms ease;
+  transition: all 150ms ease;
+  background-color: var(--surface);
 }
 
 .Navbar a:hover {
   background-color: var(--surfaceDim);
+  translate: 10px 10px;
+  box-shadow: -10px -10px black;
 }
 
 .Navbar a.active-link {
   border-bottom: 2px solid var(--onSurface);
+}
+
+.NavbarCover {
+  z-index: 10;
+  background-color: var(--surface);
+  width: 100%;
 }
 
 #open-sidebar-button {
@@ -55,13 +66,15 @@ NAVIGATION BAR
   margin-left: auto;
   cursor: pointer;
 }
-#close-sidebar-button {
+
+.CloseSidebarButton {
   display: none;
   background: none;
   border: none;
   padding: 1em;
   cursor: pointer;
 }
+
 #overlay {
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -75,9 +88,10 @@ NAVIGATION BAR
   pointer-events: auto;
   outline: 3px solid #ffffff;
 }
+
 @media screen and (max-width: 64rem) {
   #open-sidebar-button,
-  #close-sidebar-button {
+  .CloseSidebarButton {
     display: block;
   }
 
@@ -92,24 +106,24 @@ NAVIGATION BAR
     border-left: 1px solid var(--onSurface);
     transition: right 300ms ease-in-out;
   }
-  nav.show {
+  .Navbat.show {
     right: 0;
   }
-  nav.show ~ #overlay {
+  .Navbar.show ~ #overlay {
     display: block;
   }
-  nav ul {
+  .Navbar ul {
     width: 100%;
     flex-direction: column;
   }
-  nav a {
+  .Navbar a {
     width: 100%;
     padding-left: 2.5em;
   }
-  nav a.active-link {
+  .Navbar a.active-link {
     border-bottom: none;
   }
-  nav .home-li {
+  .Navbar .home-li {
     margin-right: unset;
   }
 }

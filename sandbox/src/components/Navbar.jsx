@@ -23,7 +23,11 @@ export default function Navbar() {
       <nav id="navbar" className={styles.Navbar}>
         <ul>
           <li>
-            <button id="close-sidebar-button" aria-label="close sidebar">
+            <button
+              id="close-sidebar-button"
+              aria-label="close sidebar"
+              className={styles.CloseSidebarButton}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="40px"
@@ -55,6 +59,7 @@ export default function Navbar() {
               <h4>Projects</h4>
             </a>
           </li>
+          <li className={styles.NavbarCover}></li>
         </ul>
       </nav>
 
