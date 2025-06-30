@@ -63,7 +63,7 @@
 body {
   margin-top: 6rem;
   color: var(--onSurface);
-  background-color: var(--surface);
+  background-color: white;
 }
 
 h1 {

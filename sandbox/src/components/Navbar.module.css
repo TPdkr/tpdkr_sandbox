@@ -30,6 +30,7 @@ NAVIGATION BAR
 
 .Navbar a {
   z-index: 10;
+  overflow: hidden;
   display: flex;
   text-decoration: none;
   padding: 1em 2em;
@@ -39,9 +40,16 @@ NAVIGATION BAR
 }
 
 .Navbar a:hover {
+  overflow: hidden;
   background-color: var(--surfaceDim);
   translate: 10px 10px;
   box-shadow: -10px -10px black;
+}
+
+.Navbar a:active {
+  background-color: var(--surfaceDim);
+  translate: 15px 15px;
+  box-shadow: -15px -15px black;
 }
 
 .Navbar a.active-link {
