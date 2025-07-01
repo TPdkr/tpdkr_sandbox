@@ -1,7 +1,6 @@
 .RetroButton {
-  margin: 20px;
   padding: 10px;
-  background-color: #a7a087;
+  background-color: var(--surface);
   border: 2px solid hsl(45, 15%, 10%);
   box-shadow: 5px 5px 1px 1px hsl(45, 15%, 10%);
   transition: all 0.3s;

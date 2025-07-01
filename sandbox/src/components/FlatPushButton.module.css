@@ -1,0 +1,25 @@
+.FlatPushButton {
+  display: inline-block;
+  width: fit-content;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.FlatPushButtonContents {
+  padding: 1em 2em;
+  color: var(--onSurface);
+  transition: all 150ms ease;
+  background-color: var(--surface);
+}
+
+.FlatPushButtonContents:hover {
+  background-color: var(--surfaceDim);
+  translate: 10px 10px;
+  box-shadow: -10px -10px black;
+}
+
+.FlatPushButtonContents:active {
+  background-color: var(--surfaceDim);
+  translate: 15px 15px;
+  box-shadow: -15px -15px black;
+}

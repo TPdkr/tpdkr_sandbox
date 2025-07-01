@@ -1,12 +1,17 @@
+import FlatPushButton from "../components/FlatPushButton";
 import FlatRetroButton from "../components/FlatRetroButton";
 import RetroButton from "../components/RetroButton";
+import "./Buttons.css";
 
 export default function Buttons() {
   return (
-    <div>
+    <>
       <h1>This is a buttons page</h1>
-      <FlatRetroButton></FlatRetroButton>
-      <RetroButton></RetroButton>
-    </div>
+      <div className="buttons-container">
+        <FlatRetroButton></FlatRetroButton>
+        <RetroButton></RetroButton>
+        <FlatPushButton>this is a flat push button</FlatPushButton>
+      </div>
+    </>
   );
 }
