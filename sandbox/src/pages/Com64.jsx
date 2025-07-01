@@ -6,7 +6,7 @@ export default function Com64() {
       <h1>These are inspired by commodore 64</h1>
       <table>
         <tr>
-          <ColorCell color="hsl(197, 100%, 93%)"></ColorCell>
+          <ColorCell color="hsl(197, 100%, 93%)">light pallte</ColorCell>
           <ColorCell color="hsl(109, 50%, 90%)"></ColorCell>
           <ColorCell color="hsl(47, 98%, 89%)"></ColorCell>
           <ColorCell color="hsl(21, 96%, 94%)"></ColorCell>
@@ -31,7 +31,7 @@ export default function Com64() {
         </tr>
         <tr>This is the base color pallete below</tr>
         <tr>
-          <ColorCell color="hsl(197, 100%, 63%)"></ColorCell>
+          <ColorCell color="hsl(197, 100%, 63%)">this is the og</ColorCell>
           <ColorCell color="hsl(109, 50%, 60%)"></ColorCell>
           <ColorCell color="hsl(47, 98%, 59%)"></ColorCell>
           <ColorCell color="hsl(21, 96%, 64%)"></ColorCell>
