@@ -1,4 +1,5 @@
 .FlatPushButton {
+  cursor: pointer;
   display: inline-block;
   width: fit-content;
   overflow: hidden;
