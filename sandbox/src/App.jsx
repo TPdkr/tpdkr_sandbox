@@ -8,8 +8,8 @@ import Com64 from "./pages/Com64";
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
       <BrowserRouter>
+        <Navbar></Navbar>
         <Routes>
           <Route
             path="/"

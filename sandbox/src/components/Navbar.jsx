@@ -1,7 +1,9 @@
+import FlatPushButton from "./FlatPushButton";
 import styles from "./Navbar.module.css";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isNavVisible, setIsNavVisible] = useState(false);
   return (
     <div>
       <button
@@ -9,6 +11,10 @@ export default function Navbar() {
         aria-label="open sidebar"
         aria-expanded="false"
         aria-controls="navbar"
+        onClick={() => {
+          setIsNavVisible(true);
+          console.log("opening the thing");
+        }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,13 +27,17 @@ export default function Navbar() {
         </svg>
       </button>
 
-      <nav id="navbar" className={styles.Navbar}>
+      <nav
+        id="navbar"
+        className={[styles.Navbar, isNavVisible ? "shown" : ""].join(" ")}
+      >
         <ul>
           <li>
             <button
               id="close-sidebar-button"
               aria-label="close sidebar"
               className={styles.CloseSidebarButton}
+              onClick={() => setIsNavVisible(false)}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,31 +50,24 @@ export default function Navbar() {
               </svg>
             </button>
           </li>
-          <li class="home-li">
-            <a class="active-link" aria-current="page" href="index.html">
-              <h4>Home</h4>
-            </a>
+          <li>
+            <FlatPushButton path="/tpdkr_sandbox/com64">
+              <h4>Com64</h4>
+            </FlatPushButton>
           </li>
           <li>
-            <a href="index.html#main_title">
-              <h4>About</h4>
-            </a>
+            <FlatPushButton path="/tpdkr_sandbox/buttons">
+              <h4>Buttons</h4>
+            </FlatPushButton>
           </li>
-          <li>
-            <a href="index.html#edu_title">
-              <h4>Education</h4>
-            </a>
-          </li>
-          <li>
-            <a href="projects.html">
-              <h4>Projects</h4>
-            </a>
-          </li>
-          <li className={styles.NavbarCover}></li>
         </ul>
       </nav>
 
-      <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+      <div
+        id="overlay"
+        onClick={() => setIsNavVisible(false)}
+        aria-hidden="true"
+      ></div>
     </div>
   );
 }

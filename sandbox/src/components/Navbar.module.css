@@ -28,40 +28,6 @@ NAVIGATION BAR
   display: flex;
 }
 
-.Navbar a {
-  z-index: 10;
-  overflow: hidden;
-  display: flex;
-  text-decoration: none;
-  padding: 1em 2em;
-  color: var(--onSurface);
-  transition: all 150ms ease;
-  background-color: var(--surface);
-}
-
-.Navbar a:hover {
-  overflow: hidden;
-  background-color: var(--surfaceDim);
-  translate: 10px 10px;
-  box-shadow: -10px -10px black;
-}
-
-.Navbar a:active {
-  background-color: var(--surfaceDim);
-  translate: 15px 15px;
-  box-shadow: -15px -15px black;
-}
-
-.Navbar a.active-link {
-  border-bottom: 2px solid var(--onSurface);
-}
-
-.NavbarCover {
-  z-index: 10;
-  background-color: var(--surface);
-  width: 100%;
-}
-
 #open-sidebar-button {
   position: fixed;
   top: 0;
@@ -91,12 +57,6 @@ NAVIGATION BAR
   display: none;
 }
 
-.skip-link:focus {
-  opacity: 1;
-  pointer-events: auto;
-  outline: 3px solid #ffffff;
-}
-
 @media screen and (max-width: 64rem) {
   #open-sidebar-button,
   .CloseSidebarButton {
@@ -123,15 +83,5 @@ NAVIGATION BAR
   .Navbar ul {
     width: 100%;
     flex-direction: column;
-  }
-  .Navbar a {
-    width: 100%;
-    padding-left: 2.5em;
-  }
-  .Navbar a.active-link {
-    border-bottom: none;
-  }
-  .Navbar .home-li {
-    margin-right: unset;
   }
 }
