@@ -49,7 +49,7 @@ NAVIGATION BAR
   cursor: pointer;
 }
 
-#overlay {
+.overlay {
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
   inset: 0;
@@ -74,10 +74,10 @@ NAVIGATION BAR
     border-left: 1px solid var(--onSurface);
     transition: right 300ms ease-in-out;
   }
-  .Navbat.show {
+  .Navbar.show {
     right: 0;
   }
-  .Navbar.show ~ #overlay {
+  .Navbar.show ~ .overlay {
     display: block;
   }
   .Navbar ul {

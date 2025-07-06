@@ -29,7 +29,7 @@ export default function Navbar() {
 
       <nav
         id="navbar"
-        className={[styles.Navbar, isNavVisible ? "shown" : ""].join(" ")}
+        className={[styles.Navbar, isNavVisible ? styles.show : ""].join(" ")}
       >
         <ul>
           <li>
@@ -64,7 +64,7 @@ export default function Navbar() {
       </nav>
 
       <div
-        id="overlay"
+        className={styles.overlay}
         onClick={() => setIsNavVisible(false)}
         aria-hidden="true"
       ></div>

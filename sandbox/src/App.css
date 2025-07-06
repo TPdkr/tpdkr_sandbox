@@ -66,6 +66,12 @@ body {
   background-color: white;
 }
 
+@media screen and (max-width: 64rem) {
+  body {
+    margin-top: 0;
+  }
+}
+
 h1 {
   font-size: 3rem;
 }
