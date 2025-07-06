@@ -28,7 +28,7 @@ NAVIGATION BAR
   display: flex;
 }
 
-#open-sidebar-button {
+.OpenSidebarButton {
   position: fixed;
   top: 0;
   right: 0;
@@ -58,7 +58,7 @@ NAVIGATION BAR
 }
 
 @media screen and (max-width: 64rem) {
-  #open-sidebar-button,
+  .OpenSidebarButton,
   .CloseSidebarButton {
     display: block;
   }
@@ -71,7 +71,7 @@ NAVIGATION BAR
     height: 100vh;
     width: clamp(50%, 30rem, 100%);
     z-index: 100;
-    border-left: 1px solid var(--onSurface);
+    border-left: 4px solid var(--onSurface);
     transition: right 300ms ease-in-out;
   }
   .Navbar.show {
