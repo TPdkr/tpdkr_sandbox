@@ -12,8 +12,8 @@ export default function Buttons() {
         <FlatRetroButton></FlatRetroButton>
         <RetroButton></RetroButton>
         <FlatPushButton>this is a flat push button</FlatPushButton>
-        <FlatPushButton>
-          <Link to="/tpdkr_sandbox/com64">this is a link</Link>
+        <FlatPushButton path="/tpdkr_sandbox/com64">
+          This is a link
         </FlatPushButton>
       </div>
     </>
