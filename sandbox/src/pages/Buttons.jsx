@@ -1,7 +1,6 @@
 import FlatPushButton from "../components/FlatPushButton";
 import FlatRetroButton from "../components/FlatRetroButton";
 import RetroButton from "../components/RetroButton";
-import { Link } from "react-router-dom";
 import "./Buttons.css";
 
 export default function Buttons() {
