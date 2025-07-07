@@ -56,6 +56,11 @@ export default function Navbar() {
               <h4>Buttons</h4>
             </FlatPushButton>
           </li>
+          <li>
+            <FlatPushButton path="/">
+              <h4>Main</h4>
+            </FlatPushButton>
+          </li>
         </ul>
       </nav>
 

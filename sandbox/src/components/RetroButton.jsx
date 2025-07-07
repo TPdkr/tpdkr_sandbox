@@ -1,9 +1,20 @@
 import styles from "./RetroButton.module.css";
+import { useNavigate } from "react-router-dom";
 
-export default function RetroButton(props) {
+export default function RetroButton({
+  onClick = () => {},
+  path = "",
+  children,
+}) {
+  let action = onClick;
+  const navigate = useNavigate();
+  if (path != "") {
+    action = () => navigate(path);
+  }
+
   return (
-    <>
-      <button className={styles.RetroButton}>{props.content}</button>
-    </>
+    <button className={styles.RetroButton} onClick={action}>
+      {children}
+    </button>
   );
 }
