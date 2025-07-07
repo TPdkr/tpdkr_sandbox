@@ -13,8 +13,10 @@ export default function RetroButton({
   }
 
   return (
-    <button className={styles.RetroButton} onClick={action}>
-      {children}
-    </button>
+    <span className={styles.RetroButtonBorder}>
+      <button className={styles.RetroButton} onClick={action}>
+        {children}
+      </button>
+    </span>
   );
 }
