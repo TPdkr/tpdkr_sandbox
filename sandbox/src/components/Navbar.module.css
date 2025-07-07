@@ -36,7 +36,6 @@ NAVIGATION BAR
   display: none;
   background: none;
   border: none;
-  padding: 1em;
   margin-left: auto;
   cursor: pointer;
 }
@@ -45,7 +44,6 @@ NAVIGATION BAR
   display: none;
   background: none;
   border: none;
-  padding: 1em;
   cursor: pointer;
 }
 
@@ -83,5 +81,9 @@ NAVIGATION BAR
   .Navbar ul {
     width: 100%;
     flex-direction: column;
+  }
+
+  .NavbarButton {
+    width: 100%;
   }
 }

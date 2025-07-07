@@ -1,15 +1,14 @@
 import FlatPushButton from "./FlatPushButton";
 import styles from "./Navbar.module.css";
 import { useState } from "react";
+import RetroButton from "./RetroButton";
 
 export default function Navbar() {
   const [isNavVisible, setIsNavVisible] = useState(false);
   return (
     <>
-      <button
+      <RetroButton
         className={styles.OpenSidebarButton}
-        aria-label="open sidebar"
-        aria-controls="navbar"
         onClick={() => setIsNavVisible(true)}
       >
         <svg
@@ -21,7 +20,7 @@ export default function Navbar() {
         >
           <path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
         </svg>
-      </button>
+      </RetroButton>
 
       <nav
         id="navbar"
@@ -47,19 +46,25 @@ export default function Navbar() {
             </button>
           </li>
           <li>
-            <FlatPushButton path="/tpdkr_sandbox/com64">
+            <RetroButton
+              path="/tpdkr_sandbox/com64"
+              className={styles.NavbarButton}
+            >
               <h4>Com64</h4>
-            </FlatPushButton>
+            </RetroButton>
           </li>
           <li>
-            <FlatPushButton path="/tpdkr_sandbox/buttons">
+            <RetroButton
+              path="/tpdkr_sandbox/buttons"
+              className={styles.NavbarButton}
+            >
               <h4>Buttons</h4>
-            </FlatPushButton>
+            </RetroButton>
           </li>
           <li>
-            <FlatPushButton path="/">
+            <RetroButton path="/" className={styles.NavbarButton}>
               <h4>Main</h4>
-            </FlatPushButton>
+            </RetroButton>
           </li>
         </ul>
       </nav>

@@ -3,3 +3,9 @@
   gap: 20px;
   margin: 50px;
 }
+
+@media screen and (max-width: 64rem) {
+  .buttons-container {
+    flex-direction: column;
+  }
+}
