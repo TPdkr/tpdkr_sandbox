@@ -62,6 +62,11 @@ export default function Navbar() {
             </RetroButton>
           </li>
           <li>
+            <RetroButton path="/tpdkr_sandbox/windows" fullwidth={true}>
+              <h4>Windows</h4>
+            </RetroButton>
+          </li>
+          <li>
             <RetroButton path="/tpdkr_sandbox/" fullwidth={true}>
               <h4>Main</h4>
             </RetroButton>

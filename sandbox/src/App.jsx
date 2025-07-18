@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Outlet, Link } from "react-router-dom";
 import Buttons from "./pages/Buttons";
 import Com64 from "./pages/Com64";
+import Windows from "./pages/Windows";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           />
           <Route path="/tpdkr_sandbox/buttons" element={<Buttons />} />
           <Route path="/tpdkr_sandbox/com64" element={<Com64 />} />
+          <Route path="/tpdkr_sandbox/windows" element={<Windows></Windows>} />
           <Route
             path="*"
             element={

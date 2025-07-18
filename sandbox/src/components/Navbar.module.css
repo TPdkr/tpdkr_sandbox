@@ -18,10 +18,8 @@ NAVIGATION BAR
 .Navbar ul {
   list-style: none;
   display: flex;
-}
-
-.Navbar .home-li {
-  margin-right: auto;
+  padding: 3px;
+  gap: 3px;
 }
 
 .Navbar li {
@@ -78,6 +76,7 @@ NAVIGATION BAR
   }
 
   .OpenSideBarPanel {
+    position: sticky;
     display: flex;
   }
 
