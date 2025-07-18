@@ -7,20 +7,26 @@ export default function Navbar() {
   const [isNavVisible, setIsNavVisible] = useState(false);
   return (
     <>
-      <RetroButton
-        className={styles.OpenSidebarButton}
-        onClick={() => setIsNavVisible(true)}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="40px"
-          viewBox="0 -960 960 960"
-          width="40px"
-          fill="#000000"
+      <div className={styles.OpenSideBarPanel}>
+        <div className={styles.OpenSideBarPanelTitle}>
+          <h4>CV.web</h4>
+        </div>
+
+        <RetroButton
+          className={styles.OpenSidebarButton}
+          onClick={() => setIsNavVisible(true)}
         >
-          <path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
-        </svg>
-      </RetroButton>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 -960 960 960"
+            width="40px"
+            fill="#000000"
+          >
+            <path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+          </svg>
+        </RetroButton>
+      </div>
 
       <nav
         id="navbar"
@@ -46,23 +52,17 @@ export default function Navbar() {
             </button>
           </li>
           <li>
-            <RetroButton
-              path="/tpdkr_sandbox/com64"
-              className={styles.NavbarButton}
-            >
+            <RetroButton path="/tpdkr_sandbox/com64" fullwidth={true}>
               <h4>Com64</h4>
             </RetroButton>
           </li>
           <li>
-            <RetroButton
-              path="/tpdkr_sandbox/buttons"
-              className={styles.NavbarButton}
-            >
+            <RetroButton path="/tpdkr_sandbox/buttons" fullwidth={true}>
               <h4>Buttons</h4>
             </RetroButton>
           </li>
           <li>
-            <RetroButton path="/" className={styles.NavbarButton}>
+            <RetroButton path="/tpdkr_sandbox/" fullwidth={true}>
               <h4>Main</h4>
             </RetroButton>
           </li>

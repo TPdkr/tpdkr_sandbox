@@ -5,6 +5,7 @@ export default function RetroButton({
   className = "",
   onClick = () => {},
   path = "",
+  fullwidth = false,
   children,
 }) {
   //In case path is specified the button is turned into a link
@@ -15,8 +16,12 @@ export default function RetroButton({
   }
 
   return (
-    <span className={`${styles.RetroButtonBorder} ${className}`}>
-      <button className={styles.RetroButton} onClick={action}>
+    <span
+      className={`${styles.RetroButtonBorder} ${className} ${
+        fullwidth ? styles.RetroBFullWidth : styles.RetroBFitWidth
+      }`}
+    >
+      <button className={`${styles.RetroButton} ${className}`} onClick={action}>
         {children}
       </button>
     </span>

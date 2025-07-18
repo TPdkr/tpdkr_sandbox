@@ -28,15 +28,31 @@ NAVIGATION BAR
   display: flex;
 }
 
-.OpenSidebarButton {
+.OpenSideBarPanel {
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--surface);
+  border-bottom: 4px solid var(--onSurface);
+  display: none;
+}
+
+.OpenSideBarPanelTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.OpenSidebarButton {
   z-index: 50;
   display: none;
   background: none;
   border: none;
-  margin-left: auto;
   cursor: pointer;
 }
 
@@ -61,6 +77,10 @@ NAVIGATION BAR
     display: block;
   }
 
+  .OpenSideBarPanel {
+    display: flex;
+  }
+
   .Navbar {
     position: fixed;
     top: 0;
@@ -71,7 +91,13 @@ NAVIGATION BAR
     z-index: 100;
     border-left: 4px solid var(--onSurface);
     transition: right 300ms ease-in-out;
+    padding: 1rem;
   }
+
+  .Navbar ul {
+    row-gap: 1rem;
+  }
+
   .Navbar.show {
     right: 0;
   }

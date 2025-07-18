@@ -3,7 +3,13 @@
   --source: #742cff;
   --surface: #d4d4d4;
   --onSurface: #000000;
-  --surfaceDim: #bdbdbd;
+  /*
+  --surfaceDim: hsl(0, 0%, 74%);
+  --surfaceDark: hsl(0, 0%, 54%);*/
+  --surface: hsl(29, 14%, 67%);
+  --surfaceDim: hsl(29, 14%, 57%);
+  --surfaceDark: hsl(29, 14%, 47%);
+
   --primaryContainer: #4d3d75;
   --onPrimaryContainer: #e9ddff;
   --primary: #cfbdfe;

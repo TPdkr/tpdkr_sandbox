@@ -12,7 +12,7 @@ function App() {
         <Navbar></Navbar>
         <Routes>
           <Route
-            path="/"
+            path="/tpdkr_sandbox/"
             element={
               <div>
                 <h1>Main page</h1>
@@ -28,7 +28,7 @@ function App() {
             element={
               <div>
                 <h1>
-                  No page found<Link to="/">Home</Link>
+                  No page found<Link to="/tpdkr_sandbox/">Home</Link>
                 </h1>
               </div>
             }

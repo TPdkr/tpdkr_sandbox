@@ -1,19 +1,29 @@
 .RetroButtonBorder {
-  border: 5px solid black;
+  border: 3px solid black;
 }
 
 .RetroButton {
   padding: 5px;
   background-color: var(--surface);
-  border: 7px outset var(--surfaceDim);
+  border: 4px outset var(--surfaceDim);
   transition: all 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+.RetroBFullWidth {
   width: 100%;
 }
 
+.RetroBFitWidth {
+  width: fit-content;
+}
+
 .RetroButton:hover {
-  border: 7px solid var(--surface);
+  border: 4px solid var(--surface);
 }
 
 .RetroButton:active {
-  border: 7px inset var(--surfaceDim);
+  border: 4px inset var(--surfaceDim);
+  background-color: var(--surfaceDark);
 }
