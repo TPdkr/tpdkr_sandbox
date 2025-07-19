@@ -1,5 +1,5 @@
 .Window {
-  border: 5px solid black;
+  border: 4px solid black;
   background-color: white;
   max-width: 64rem;
   justify-self: center;
@@ -7,6 +7,6 @@
 }
 
 .WindowBar {
-  background-color: rgb(163, 163, 163);
+  background-color: var(--surface);
   min-height: 2rem;
 }
